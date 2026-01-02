@@ -1,5 +1,19 @@
 # Environment variables for templates
 
+## CivitAI Model Downloads
+
+The start.sh script supports automatic downloads from CivitAI for the following model types:
+
+- **LoRA models**: Use `CIVITAI_MODEL_LORA_URL1`, `CIVITAI_MODEL_LORA_URL2`, ... (up to 50)
+  - Downloaded to: `/workspace/ComfyUI/models/loras/`
+  - Example: `CIVITAI_MODEL_LORA_URL1="https://civitai.com/api/download/models/123456"`
+
+- **UNet/Diffusion models**: Use `CIVITAI_MODEL_UNET_URL1`, `CIVITAI_MODEL_UNET_URL2`, ... (up to 50)
+  - Downloaded to: `/workspace/ComfyUI/models/diffusion_models/`
+  - Example: `CIVITAI_MODEL_UNET_URL1="https://civitai.com/api/download/models/789012"`
+
+**Note:** `CIVITAI_TOKEN` environment variable must be set for downloads to work.
+
 ## WAN 2.2
 
 ### t2v
