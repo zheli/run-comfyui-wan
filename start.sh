@@ -349,6 +349,7 @@ if [[ "$HAS_COMFYUI" -eq 1 ]]; then
     # categorie: NAME:MAP	
     CATEGORIES_CIVITAI=(
        "LORA_URL:loras"
+       "UNET_URL:diffusion_models"
     )
 
     for cat in "${CATEGORIES_CIVITAI[@]}"; do
